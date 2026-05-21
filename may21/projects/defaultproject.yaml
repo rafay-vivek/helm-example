@@ -1,0 +1,12 @@
+apiVersion: system.k8smgmt.io/v3
+kind: Project
+metadata:
+  name: defaultproject
+spec:
+  clusterResourceQuota:
+    ephemeralStorageRequests: 10000Mi
+  default: true
+  defaultClusterNamespaceQuota:
+    ephemeralStorageRequests: 100Mi
+  driftWebhook:
+    enabled: true
